@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 f2.txt : master version1
+=======
+f2.txt : version1
+>>>>>>> exp
