@@ -1,0 +1,36 @@
+1)
+cd documents
+mkdir gitpractice2
+cd gitpractice2
+vim f1.txt(f1.txt : version1)
+vim f2.txt(f2.txt : version2)
+git add f1.txt, f2.txt
+git commit -m "version1"
+
+2)
+git branch exp
+vim f1.txt
+vim f2.txt(텍스트 수정)
+git add f1.txt, f2.txt
+git commit -m "master version"
+git checkout exp
+add -> commit(exp version)
+
+3)
+(master에서)git merge exp
+*conflict시 텍스트파일 직접수정후 다시 add, commit
+정상적으로 merge되면 
+Already up to date라고 뜸
+
+4)
+git stash 
+*commit을 안한 상태로 다른 branch로 넘어가지 말것 
+stash를 하거나 commit을 하거나
+
+5)원격저장소
+www.git-hub.com에 들어가서 sign up
+
+git remote add origin(별명) 주소
+git push origin master(원격저장소에 파일 저장)
+파일 저장순서(노트북, 다른 기기)
+노트북:push -> 다른기기:clone -> 노트북:pull -> 다른기기:pull....
